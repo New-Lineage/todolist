@@ -11,7 +11,7 @@ class Login extends Component {
     axios.get('http://yapi.demo.qunar.com/mock/10062/login')
     .then((data)=>{
       message.success(data.data.data.uid,1,()=>{
-        this.props.history.push('/admin')
+        this.props.history.push('/admin/first')
       })
     })
   }

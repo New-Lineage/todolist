@@ -3,7 +3,7 @@ import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
 
 
 const { Header, Sider, Content } = Layout;
-class Text extends Component {
+class Add extends Component {
   constructor() {
     super()
     console.log(this)
@@ -45,7 +45,7 @@ class Text extends Component {
     return (
       <Layout>
         <Header style={{ background: '#fff', padding: 0 }}>
-          <div style={{ float: 'left', margin: '0  0  0 10px' }}>富文本</div>
+          <div style={{ float: 'left', margin: '0  0  0 10px' }}>用户添加</div>
           <Badge count={1} style={{ backgroundColor: '#87d068', margin: '15px 15px 0  0' }}>
             <Dropdown overlay={this.menu}>
               <a className="ant-dropdown-link" href="#">
@@ -62,7 +62,7 @@ class Text extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            富文本
+            内容
 
 
 
@@ -73,4 +73,4 @@ class Text extends Component {
     )
   }
 }
-export default Text
+export default Add
