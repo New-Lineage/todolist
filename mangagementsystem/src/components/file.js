@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
-import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
-
+import { Layout,Menu,Badge,Dropdown,Avatar,message,Upload, Button, Icon } from 'antd';
+// import { Upload, Button, Icon } from 'antd';
 
 const { Header, Sider, Content } = Layout;
+
+const fileList = [];
+
+const props = {
+  action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
+  listType: 'picture',
+  defaultFileList: [...fileList],
+}
+
 class File extends Component {
   constructor() {
     super()
@@ -41,6 +50,8 @@ class File extends Component {
     // this.forceUpdate()
     window.location.reload()
   }
+
+
   render() {
     return (
       <Layout>
@@ -61,13 +72,14 @@ class File extends Component {
             padding: 0,
             background: '#f0f2f5',
             minHeight: 280,
-            }}>
-            上传文件
-
-
-
-
-
+            }}> 
+              <div>
+                <Upload {...props} directory="true">
+                  <Button>
+                    <Icon type="upload" /> 
+                  </Button>
+                </Upload>
+              </div>
         </Content>
         </Layout>
     )
