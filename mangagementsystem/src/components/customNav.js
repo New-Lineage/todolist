@@ -81,7 +81,7 @@ class CustomNav extends Component {
           }}><Icon type="logout" />空白页</Menu.Item>
           <Menu.Item key="13" onClick={()=>{
             this.props.history.push('/admin/empty3')
-          }}><Icon type="logout" />空白页</Menu.Item>
+          }}><Icon type="logout" />个人设置</Menu.Item>
 
           <Menu.Item key="10" onClick={()=>{
             this.props.history.push('/admin/back')

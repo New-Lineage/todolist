@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component ,Fragment} from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
 
 
@@ -45,7 +45,7 @@ class Empty3 extends Component {
     return (
       <Layout>
         <Header style={{ background: '#fff', padding: 0 }}>
-          <div style={{ float: 'left', margin: '0  0  0 10px' }}>空页面</div>
+          <div style={{ float: 'left', margin: '0  0  0 10px' }}>个人设置</div>
           <Badge count={1} style={{ backgroundColor: '#87d068', margin: '15px 15px 0  0' }}>
             <Dropdown overlay={this.menu}>
               <a className="ant-dropdown-link" href="#">
@@ -62,12 +62,14 @@ class Empty3 extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            Empty3
+            <Fragment>
+            <div>
+ 
+            </div>
+            <div>
 
-
-
-
-
+            </div>
+            </Fragment>
         </Content>
         </Layout>
     )
