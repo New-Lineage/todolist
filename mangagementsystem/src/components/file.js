@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message,Upload, Button, Icon } from 'antd';
-// import { Upload, Button, Icon } from 'antd';
 
 const { Header, Sider, Content } = Layout;
 
@@ -53,8 +52,6 @@ class File extends Component {
     });
   };
   handlefrech(){
-    // this.props.history.push('/admin/first')
-    // this.forceUpdate()
     window.location.reload()
   }
 

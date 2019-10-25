@@ -1,8 +1,7 @@
-import React, { Component,Fragment } from 'react'
+import React, { Component } from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message ,} from 'antd';
 import {withRouter,} from 'react-router-dom'
 const { Header, } = Layout;
-
 class Empty3 extends Component {
   constructor() {
     super()

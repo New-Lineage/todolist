@@ -1,25 +1,27 @@
 import React, { Component } from 'react'
 import {HashRouter,Switch,Route,Redirect,} from 'react-router-dom'
-import Login from './components/login'
 import Admin from './components/admin'
-import Home from './components/home'
-import Mange from './components/mange'
-import Setup from './components/setup'
-import Back from './components/back'
-import File from './components/file'
-import Pic from './components/pic'
-import Form from './components/form'
-import Text from './components/text'
-import First from './components/first';
-import Add from './components/add';
-import Del from './components/del';
-import Empty1 from './components/empty/empty1.js';
-import Empty2 from './components/empty/empty2.js';
-import Empty3 from './components/empty/empty3.js';
 import Basic from './components/set/basic';
 import Safety from './components/set/safety'
 import News from './components/set/news'
 import Bound from './components/set/bound'
+import {
+    Login,
+    Add,
+    First,
+    Back,
+    Del,
+    Form,
+    Home,
+    File,
+    Mange,
+    Pic,
+    Setup,
+    Text,
+    Empty1,
+    Empty2,
+    Empty3
+} from './loadable/index'
 class RouterRoot extends Component {
  render(){
    return (

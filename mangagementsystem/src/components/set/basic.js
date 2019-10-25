@@ -75,7 +75,8 @@ import {Form,Input,Tooltip,Icon,Cascader,Button,Upload} from 'antd';
                                 
                         <div style={{margin:'50px 0 0 200px',display:'flex',flexDirection:'column',textAlign:'center'}}>
                         <p>头像</p>
-                        <img src="https://gw.alipayobjects.com/zos/antfincdn/XAosXuNZyF/BiazfanxmamNRoxxVxka.png" alt="" style={{width:'144px',height:'144px',marginBottom:'20px'}}/>
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571737834262&di=218e2acf3a5cf3481b3de38a90b3cf7f&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_mini%2Cc_zoom%2Cw_640%2Fimages%2F20170728%2F5843abd8cdb74745a2fe2349879cb055.jpeg"
+                         alt="" style={{width:'144px',height:'144px',marginBottom:'20px',borderRadius:'50%'}}/>
                         <Upload >
                         <Button>
                             <Icon type="upload" /> 上传头像
