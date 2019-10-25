@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {HashRouter,Switch,Route,Redirect,} from 'react-router-dom'
+import {HashRouter,Switch,Route,Redirect} from 'react-router-dom'
 import Admin from './components/admin'
 import {
     Login,
