@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
-
+import AddUser from '../components/user/add'
 
 const { Header, Sider, Content } = Layout;
 class Add extends Component {
@@ -62,9 +62,8 @@ class Add extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            内容
 
-
+            <AddUser></AddUser>
 
 
 

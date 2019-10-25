@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
-
+import UserList from '../components/user/index'
 
 const { Header, Sider, Content } = Layout;
 class Del extends Component {
@@ -62,8 +62,7 @@ class Del extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            内容123
-
+            <UserList></UserList>
 
 
 
