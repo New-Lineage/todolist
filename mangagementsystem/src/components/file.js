@@ -4,13 +4,20 @@ import { Layout,Menu,Badge,Dropdown,Avatar,message,Upload, Button, Icon } from '
 
 const { Header, Sider, Content } = Layout;
 
-const fileList = [];
+const fileList = [
+  {
+    uid: '-1',
+    name: '绝美的图片.png',
+    status: 'done',
+    url: 'http://c1.haibao.cn/img/0_0_100_0/1473753481.8914/c49d1293cd9f13dd7569f26e7e066bc2.jpg',
+  },
+];
 
 const props = {
   action: 'https://www.mocky.io/v2/5cc8019d300000980a055e76',
   listType: 'picture',
   defaultFileList: [...fileList],
-}
+};
 
 class File extends Component {
   constructor() {
@@ -74,7 +81,7 @@ class File extends Component {
             minHeight: 280,
             }}> 
               <div>
-                <Upload {...props} directory="true">
+                <Upload {...props} >
                   <Button>
                     <Icon type="upload" /> 
                   </Button>

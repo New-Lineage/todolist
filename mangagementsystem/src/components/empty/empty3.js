@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
+import React, { Component,Fragment } from 'react'
+import { Layout,Menu,Badge,Dropdown,Avatar,message ,} from 'antd';
+import {withRouter,} from 'react-router-dom'
+const { Header, } = Layout;
 
-
-const { Header, Sider, Content } = Layout;
 class Empty3 extends Component {
   constructor() {
     super()
@@ -13,12 +13,12 @@ class Empty3 extends Component {
   };
   onClick = ({ key }) => {
     console.log(key)
-    if (key == 1) {
+    if (key === 1) {
      this.props.history.push('/admin/home')
 
-    } else if (key == 2) {
+    } else if (key === 2) {
       message.info(`您有很多消息，请去facebok上查看 ^_^`)
-    } else if (key == 3) {
+    } else if (key === 3) {
 
       this.props.history.push('/login')
     }
@@ -37,15 +37,14 @@ class Empty3 extends Component {
     });
   };
   handlefrech(){
-    // this.props.history.push('/admin/first')
-    // this.forceUpdate()
     window.location.reload()
   }
   render() {
+    console.log(this)
     return (
       <Layout>
         <Header style={{ background: '#fff', padding: 0 }}>
-          <div style={{ float: 'left', margin: '0  0  0 10px' }}>空页面</div>
+          <div style={{ float: 'left', margin: '0  0  0 10px' }}>个人设置</div>
           <Badge count={1} style={{ backgroundColor: '#87d068', margin: '15px 15px 0  0' }}>
             <Dropdown overlay={this.menu}>
               <a className="ant-dropdown-link" href="#">
@@ -54,23 +53,50 @@ class Empty3 extends Component {
             </Dropdown>
           </Badge>
         </Header>
-        <Content
-            style={{
+        <div style={{
             height: '100%',
             margin: '24px 16px',
             padding: 0,
-            background: '#f0f2f5',
+            background: '#fff',
             minHeight: 280,
+            display:'flex',
             }}>
-            Empty3
-
-
-
-
-
-        </Content>
+          <div style={{width:'224px'}}>
+            <Menu >
+            <Menu.Item>
+              <span className="nav-text" onClick={()=>{
+                this.props.history.push('/admin/empty3/basic')
+              }}>基本设置</span>
+            </Menu.Item>
+            <Menu.Item >
+              <span className="nav-text"
+              onClick={()=>{
+                this.props.history.push('/admin/empty3/safety')
+              }}
+              >安全设置</span>
+            </Menu.Item>
+            <Menu.Item >
+              <span className="nav-text"
+              onClick={()=>{
+                this.props.history.push('/admin/empty3/bound')
+              }}
+              >绑定账号</span>
+            </Menu.Item>
+            <Menu.Item >
+              <span className="nav-text"
+              onClick={()=>{
+                this.props.history.push('/admin/empty3/news')
+              }}
+              >新消息通知</span>
+            </Menu.Item>
+            </Menu>
+          </div>
+          <div style={{borderLeft:'1px solid #ccc',paddingLeft:'10px',}}>
+           {this.props.children}
+          </div>
+        </div>
         </Layout>
     )
   }
 }
-export default Empty3
+export default withRouter(Empty3)

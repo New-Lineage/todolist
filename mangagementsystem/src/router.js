@@ -16,6 +16,10 @@ import Del from './components/del';
 import Empty1 from './components/empty/empty1.js';
 import Empty2 from './components/empty/empty2.js';
 import Empty3 from './components/empty/empty3.js';
+import Basic from './components/set/basic';
+import Safety from './components/set/safety'
+import News from './components/set/news'
+import Bound from './components/set/bound'
 class RouterRoot extends Component {
  render(){
    return (
@@ -39,9 +43,21 @@ class RouterRoot extends Component {
                                 <Route path='/admin/setup' component={Setup}></Route>
                                 <Route path='/admin/empty1' component={Empty1}></Route>
                                 <Route path='/admin/empty2' component={Empty2}></Route>
-                                <Route path='/admin/empty3' component={Empty3}></Route>
+                                <Route path='/admin/empty3' render={()=>{
+                                    return(
+                                        <Empty3>
+                                            <Redirect from='/admin/empty3' to='/admin/empty3/basic'></Redirect>        
+                                            <Route path='/admin/empty3/basic' component={Basic}></Route>
+                                            <Route path='/admin/empty3/safety' component={Safety}></Route>
+                                            <Route path='/admin/empty3/news' component={News}></Route>
+                                            <Route path='/admin/empty3/bound' component={Bound}></Route>
+                                        </Empty3>
+                                    )
+                                }}
+                                ></Route>
                                 <Route path='/admin/back' component={Back}></Route>
                             </Admin>
+
                         )
                     }
                 } ></Route>
