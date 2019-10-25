@@ -59,9 +59,6 @@ class CustomNav extends Component {
               }}><Icon type="folder" />文件上传</Menu.Item>           
             </SubMenu>
 
-
-
-
           <Menu.Item key="7" onClick={()=>{
             this.props.history.push('/admin/text')
           }}><Icon type="copy" />富文本</Menu.Item>
@@ -75,7 +72,7 @@ class CustomNav extends Component {
 
             <Menu.Item key="11" onClick={()=>{
             this.props.history.push('/admin/empty1')
-          }}><Icon type="logout" />空白页</Menu.Item>
+          }}><Icon type="qq" />腾讯地图</Menu.Item>
           <Menu.Item key="12" onClick={()=>{
             this.props.history.push('/admin/empty2')
           }}><Icon type="logout" />空白页</Menu.Item>
