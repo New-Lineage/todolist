@@ -65,17 +65,11 @@ class CustomNav extends Component {
           <Menu.Item key="8" onClick={()=>{
             this.props.history.push('/admin/mange')
           }}><Icon type="tool" />管理</Menu.Item>
-          <Menu.Item key="9" onClick={()=>{
-            this.props.history.push('/admin/setup')
-          }}><Icon type="setting" />设置</Menu.Item>
 
 
             <Menu.Item key="11" onClick={()=>{
             this.props.history.push('/admin/empty1')
           }}><Icon type="qq" />腾讯地图</Menu.Item>
-          <Menu.Item key="12" onClick={()=>{
-            this.props.history.push('/admin/empty2')
-          }}><Icon type="logout" />空白页</Menu.Item>
           <Menu.Item key="13" onClick={()=>{
             this.props.history.push('/admin/empty3')
           }}><Icon type="logout" />个人设置</Menu.Item>

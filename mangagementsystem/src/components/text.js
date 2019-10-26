@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Layout,Menu,Badge,Dropdown,Avatar,message } from 'antd';
 
-
 const { Header, Sider, Content } = Layout;
 class Text extends Component {
   constructor() {
@@ -62,8 +61,8 @@ class Text extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            富文本
-
+            
+            
 
 
 

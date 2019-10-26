@@ -62,12 +62,8 @@ class Empty2 extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            Empty2
-
-
-
-
-
+            
+            
         </Content>
         </Layout>
     )

@@ -63,7 +63,6 @@ class Mange extends Component {
             background: '#f0f2f5',
             minHeight: 280,
             }}>
-            上传文件
 
 
 

@@ -2,7 +2,8 @@ import React,{Component} from 'react'
 import {Card} from 'antd'
 import axios from 'axios'
 //import axios from 'axios'
-// import '../../style/add.less'
+import '../../style/add.less'
+
 class Add extends  Component{
     constructor(){
         super()
@@ -39,32 +40,31 @@ class Add extends  Component{
 
             <div className="addlist-box">
                <Card >
-               <div>
-               <span>name:</span>
+               
+               <p>请输入姓名:</p>
                <input type='text' value={this.state.name}
                 onChange={(e)=>{
                   this.setState({name:e.target.value})
                }} ></input><br></br>
 
-               </div>
-               <label>age:</label>
+               <p>请输入年龄:</p>
                <input type='text' value={this.state.age}
                 onChange={(e)=>{
                   this.setState({age:e.target.value})
                }} ></input><br></br>
 
-               <label>sex:</label>
+               <p>请输入性别:</p>
                <input type='text' value={this.state.sex}
                 onChange={(e)=>{
                   this.setState({sex:e.target.value})
                }} ></input><br></br>
 
-               <label>phone:</label>
+               <p>请输入电话号码:</p>
                <input type='text' value={this.state.phone}
                 onChange={(e)=>{
                   this.setState({phone:e.target.value})
                }} ></input><br></br>
-               <button onClick={this.submit}>添加偶像信息</button>
+               <button onClick={this.submit}>添加用户信息</button>
                </Card>
                
             </div>

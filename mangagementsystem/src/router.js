@@ -16,10 +16,8 @@ import {
     File,
     Mange,
     Pic,
-    Setup,
     Text,
     Empty1,
-    Empty2,
     Empty3
 } from './loadable/index'
 class RouterRoot extends Component {
@@ -42,9 +40,7 @@ class RouterRoot extends Component {
                                 <Route path='/admin/text' component={Text}></Route>
                                 <Route path='/admin/home' component={Home}></Route>
                                 <Route path='/admin/mange' component={Mange}></Route>
-                                <Route path='/admin/setup' component={Setup}></Route>
                                 <Route path='/admin/empty1' component={Empty1}></Route>
-                                <Route path='/admin/empty2' component={Empty2}></Route>
                                 <Route path='/admin/empty3' render={()=>{
                                     return(
                                         <Empty3>
